@@ -8,16 +8,9 @@ This framework will include...
 * A base controller class to load models and views
 * A custom database library using PDO for all models to interact with the database using prepared statements
 
-## Getting Started
+## Installation
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-#####Define all your constants in the config/config.php file:
+Define all your constants in the config/config.php file:
 
 ```
 define('DB_USER', '_YOUR_USER_');
@@ -27,7 +20,7 @@ define('URL', '_YOUR_URL_') ;
 define('SITENAME', '_YOUR_SITE_NAME_');
 ```
 
-#####Inside the public/.htaccess file be sure to point the RewriteBase to the location of your public folder
+Inside the public/.htaccess file be sure to point the RewriteBase to the location of your public folder
 ```
 RewriteBase /public/folder/location
 ```
