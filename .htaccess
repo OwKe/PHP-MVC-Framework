@@ -1,0 +1,7 @@
+# Route everythign from /public to the route URL. So hide the "/public" part of the URL.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^$ public/ [L]
+  RewriteRule (.*) public/$1 [L]
+</IfModule>

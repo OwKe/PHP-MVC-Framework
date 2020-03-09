@@ -1,0 +1,14 @@
+# The htaccess file contains Apache server directives
+
+# Using mod_rewrite to route everything throgh index.php
+# Also so that we can use URLs like "/posts"
+# as opposed to including parmeteres like "?url=posts", so looks nicer.
+
+<IfModule mod_rewrite.c>
+  Options -Multiviews
+  RewriteEngine On
+  RewriteBase /public
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>

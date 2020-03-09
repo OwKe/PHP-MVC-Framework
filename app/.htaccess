@@ -1,0 +1,3 @@
+# Stop general folder access to the current parent folder("/App")
+
+Options -Indexes
